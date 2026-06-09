@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Digital ADP follow up</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%23ec3000'/%3E%3Cstop offset='55%25' stop-color='%23ff6719'/%3E%3Cstop offset='100%25' stop-color='%23ff9f14'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3Cpath d='M18 33.5l8.2 8.2L47 21' fill='none' stroke='white' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="data/opportunities.inline.js"></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="page-header">
+    <h1>
+      <span class="header-mark" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 64 64">
+          <path d="M18 33.5l8.2 8.2L47 21" fill="none" stroke="white" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </span>
+      Digital ADP follow up
+    </h1>
+    <p class="subtitle">A focused follow-up list generated from the account development planning matrix.</p>
+  </header>
+
+  <nav class="tabbar" aria-label="Follow-up tabs">
+    <div id="tab-buttons" class="tabbar-inner" role="tablist" aria-label="People and master view"></div>
+  </nav>
+
+  <main class="layout">
+    <section class="actions" aria-label="App actions">
+      <button id="export-progress" class="actionbtn primary" type="button">Export progress CSV</button>
+      <button id="clear-progress" class="actionbtn" type="button">Clear saved progress</button>
+    </section>
+
+    <div id="app-error" class="error-banner" role="alert" hidden></div>
+    <div id="app-panels"></div>
+  </main>
+
+  <iframe id="data-proxy" class="data-proxy" title="Local opportunities data" hidden></iframe>
+
+  <noscript>
+    <div class="noscript-banner">This tool needs JavaScript enabled to load the saved progress and task list.</div>
+  </noscript>
+</body>
+</html>
